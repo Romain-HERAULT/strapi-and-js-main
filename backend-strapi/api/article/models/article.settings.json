@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "Article",
+  "info": {
+    "name": "Article",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Content": {
+      "type": "text"
+    },
+    "Autor": {
+      "type": "string"
+    },
+    "Creation_date": {
+      "type": "date"
+    },
+    "Last_update": {
+      "type": "date"
+    },
+    "Description": {
+      "type": "string"
+    }
+  }
+}
