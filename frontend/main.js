@@ -17,14 +17,16 @@ fetch('http://localhost:1337/articles')
             console.log(data[i])
 
             dataDiv += `
-                    <div> 
-                        <h1>${data[i].Title}</h1>
-                        <p>${data[i].Description}</p>
-                        <h5>${data[i].Autor}</h5>
-                        <h6>${data[i].updated_at}</h6>
-                    </div>
-                    <div>
-                        <a href="article${data[i].id}.html">Full article</a>
+                    <div class="col-md-4 text-center"> 
+                        <div>
+                            <h1>${data[i].Title}</h1>
+                            <p>${data[i].Description}</p>
+                            <h5>${data[i].Autor}</h5>
+                            <h6>${data[i].updated_at}</h6>
+                        </div>
+                        <div>
+                            <a class="btn btn-primary" href="article${data[i].id}.html">Full article</a>
+                        </div>
                     </div>
                 </div>
             </div>`
@@ -52,14 +54,16 @@ fetch('http://localhost:1337/articles')
 
             if (articleNumber == j) {
                 anArticleDiv = `
-                    <div> 
-                        <h1>${anArticle[j].Title}</h1>
-                        <p>${anArticle[j].Content}</p>
-                        <h5>${anArticle[j].Autor}</h5>
-                        <h6>${anArticle[j].updated_at}</h6>
-                    </div>
-                    <div>
-                        <a href="index.html">Main page</a>
+                    <div class="col-md-12 text-center">
+                        <div> 
+                            <h1>${anArticle[j].Title}</h1>
+                            <p>${anArticle[j].Content}</p>
+                            <h5>${anArticle[j].Autor}</h5>
+                            <h6>${anArticle[j].updated_at}</h6>
+                        </div>
+                        <div>
+                            <a class="btn btn-primary " href="index.html">Main page</a>
+                        </div>
                     </div>
                 </div>
             </div>`
